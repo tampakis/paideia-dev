@@ -1,0 +1,28 @@
+<% @title = "Welcome" %> 
+
+<%= javascript_include_tag "home" %>
+
+<div id="scrollpic">
+    <div id="pic-container">
+    <figure id="pic-frame">
+        <figcaption>
+        <%# @page.image_pages.each do |i| %>
+            <div style="display:none;">
+                <%#= raw i.caption %>
+            </div>
+        <%# end %>
+        </figcaption>
+        <a class="pic-nav" id="pic-nav-left" href="#">&nbsp;</a>
+        <a class="pic-nav" id="pic-nav-right" href="#">&nbsp;</a>
+    </figure>
+    <div id="pic-scroller">
+
+        <div class="items">
+            <%# @page.image_pages.each do |i| %>
+                <%#= image_tag(i.image.thumbnail("608x400#c").url) %>
+            <%# end %>
+        </div>
+    </div>
+    </div>
+</div>
+
