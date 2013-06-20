@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
-  <%= yield :meta %>
-  <title><% if (!defined?(@title).nil?) %><%= @title %>: <% end %>The Paideia Institute</title>
-  <link href="/news.rss" rel="alternate" title="RSS" type="application/atom+xml" />
-  <%#= <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic' rel='stylesheet' type='text/css' /> %>
-  <%= favicon_link_tag "favicon.png", :type => "image/png" %>
-  <%= stylesheet_link_tag("application") %>
-  <%= stylesheet_link_tag :all %>
-  <%= yield :stylesheet_links %>
-  <%= yield :stylesheets %>
-  <%= javascript_include_tag :defaults %>
-  <%= yield :javascripts %>
-  <%#= <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-  <script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script> %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=128637293908499";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div id="main-container">
-<header>
-  <a href="/">
-    <div id="pi-logo-left"></div>
-     	<%= image_tag "title.png", :id => 'pi-title', :alt => 'The Paideia Institute' %>
-    <div class="png" id="pi-logo-right"></div>
-  </a>
-
-</header>
-
-<!-- <section id="main-body"> -->
-  <section id="content">
-  
-    <section id="pi-menu">  
-      <div class="menu-item"><a href="/home/index" >Home</a></div>
-      <div class="menu-item"><a href="/about/index" >About</a></div>
-      <div class="menu-item"><a href="/programs/index" >Programs</a></div>
-      <div class="menu-item"><a href="/collaborate/index" >Collaborate</a></div>
-      <div class="menu-item"><a href="/support/index" >Support Paideia</a></div>
-    </section>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <%= yield :meta %>
+    <title>
+      <% if (!defined?(@title).nil?) %>
+	<%= @title %>: <% end %>The Paideia Institute</title>
+	<link href="/news.rss" rel="alternate" title="RSS" type="application/atom+xml" />
+	<%#= <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic' rel='stylesheet' type='text/css' /> %>
+	  <%= favicon_link_tag "favicon.png", :type => "image/png" %>
+	    <%= stylesheet_link_tag("application") %>
+	      <%= stylesheet_link_tag :all %>
+		<%= yield :stylesheet_links %>
+		  <%= yield :stylesheets %>
+		    <%= javascript_include_tag :defaults %>
+		      <%= yield :javascripts %>
+		      <%#= <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+		      </script>
+		      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js">
+		      </script>
+		      <script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js">
+		      </script> %>
+			<%= csrf_meta_tag %>
+			</head>
+			<body>
+			<div id="fb-root">
+			</div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) {return;}
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=128637293908499";
+			  fjs.parentNode.insertBefore(js, fjs);
+			    }(document, 'script', 'facebook-jssdk'));</script>
+			    <div id="main-container">
+			      <header>
+				<a href="/">
+				<div id="pi-logo-left">
+				</div>
+				<%= image_tag "title.png", :id => 'pi-title', :alt => 'The Paideia Institute' %>
+				<div class="png" id="pi-logo-right">
+				</div>
+			      </a>
+			      
+			    </header>
+			    
+			    <!-- <section id="main-body"> -->
+			      <section id="content">
+				
+				<section id="pi-menu">  
+				<div class="menu-item">
+				  <a href="/home/index" >Home</a>
+				</div>
+				<div class="menu-item">
+				  <a href="/about/index" >About</a>
+				</div>
+				<div class="menu-item">
+				  <a href="/programs/index" >Programs</a>
+				</div>
+				<div class="menu-item">
+				  <a href="/collaborate/index" >Collaborate</a>
+				</div>
+				<div class="menu-item">
+				  <a href="/support/index" >Support Paideia</a>
+				</div>
+			      </section>
   
   <div id="page-content">
     <%= yield %>
