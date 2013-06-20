@@ -126,7 +126,7 @@ body {
 
 }
 
-#content.page-content {
+#content.page-content-box {
    ## min-height: 100px;
    ## border-radius: 30px;
 
@@ -136,33 +136,80 @@ body {
    min-height: 100%;
 } 
 
-.page-content {
-    padding: 10px 20px;
-    margin: 20px 10px 20px 450px;
-    width: 650px;
-    ## color: red;
-    ## background-color: yellow;
-    min-height: 100%;
+#page-content {
+
+    margin: 20px 10px 20px 500px;
+    width: 1600px; #750px;
     clear: left;
-      overflow: auto;
+    overflow: auto;
 }
 
-#page-content-text {
+.page-content-box {
+    ##padding: 10px 20px;
+    ##margin: 20px 10px 20px 450px;
+    width: 700px;
+    ## color: red;
+    ## background-color: yellow;
+    min-height: 600px; ##750px; ##100%;
+    ##clear: left;
+    ##overflow: auto;
+      
+    ##display: inline;
+    float: left;
+    margin-bottom: 75px;
+    margin-right: 50px;
+    
+    background-color: rgba(255,255,255,0.5);
+    
+    padding: 30px 0px 30px 30px;    
+    
+
+      
+}
+
+#page-content-box-text {
     ## margin-left: 350px;
     ## margin-top: 4px;
-    float: right;
-    width: 320px;
-    padding: 0px 15px 15px 15px;
+    ##float: left;
+    ##width: 320px;
+    ##padding: 0px 15px 15px 15px;
     ## background-color: blue;
     ## min-height: 100%;
+    ##float: right;
+    ##margin: 15px 75px 15px 315px;
+    ##float: left;
+    ##clear: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    text-align: justify; 
+    clear: none;
+    
+
+
 }
 
 #text {
     ## color: red;
+    clear: none;
+    font-size: 20px;
+    font-family:"Times New Roman",Georgia,Serif;
+
 }
 
-#page-content-image {
+
+#page-content-box-image {
     float: left;
+    align: top;
+    ##align: right;
+    ##clear: both;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    ##display: inline;
+    
+    clear: none;
+    
 }
 
 #pi-logo-left {
