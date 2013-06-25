@@ -1,0 +1,42 @@
+
+.page-content-box {
+  text-align: justify;
+  min-height: 700px;
+}
+
+#box_hidden {
+position: absolute;
+min-height: 200px;
+min-width: 300px;
+background-color: #A19D9F; #grey
+left: 50px;
+top: 50px;
+}
+
+/* following style from http://answers.oreilly.com/topic/1823-adding-a-page-overlay-in-javascript/ */
+
+.overlay_box
+{
+  background-color: #A19D9F; #grey
+  opacity: 1;
+  /*I'm not sure what filter does... (UPDATE: pretty sure it's the same as "opacity" for IE8) */
+  /*    filter: alpha(opacity=70);  */
+  position: absolute; 
+/*   top: 0; left: 0; */
+/*   top: 200px;  */
+/*   left: 200px; */
+/*   width: 100%; height: 100%; */
+  width: 680px; 
+  height: 150px;
+  z-index: 10;
+}
+
+.overlay_text {
+/*   background-image: url(<%= asset_path 'white.jpg' %>); */
+  background-color: red;
+  opacity: 1;
+  margin: 100px auto;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 250px;
+}

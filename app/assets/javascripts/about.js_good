@@ -1,0 +1,43 @@
+
+$(document).ready(function() {
+  
+  $('#box_hidden').hide(); //Initially form will be hidden.
+  var hidden = 1;
+  
+  $('#show_button').click(function() { 
+    if (hidden==1)
+    {
+      $('#box_hidden').show('slow');  //Form shows on button click
+      hidden = 0;
+    }  
+    
+    else if (hidden==0)
+    {
+      $('#box_hidden').hide('slow');  //Form hides on button click 
+      hidden = 1;
+    }
+    
+  });
+ 
+});
+
+
+// // following two methods from http://answers.oreilly.com/topic/1823-adding-a-page-overlay-in-javascript/
+// 
+// $(document).ready(function() {
+//   
+//   $('#show_button').click(function() {
+//         
+//     
+//     var overlay = document.createElement("div");
+//     overlay.setAttribute("id","overlay");
+//     overlay.setAttribute("class", "overlay");
+//     document.body.appendChild(overlay);
+//   }); 
+//   
+//   overlay.onclick=shrink_text;	
+// });
+// 
+// function shrink_text() {
+//   document.body.removeChild(document.getElementById("overlay")); 
+// }

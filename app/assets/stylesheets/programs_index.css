@@ -1,0 +1,45 @@
+    
+    #page-content-box-text {
+    ## margin-left: 350px;
+    ## margin-top: 4px;
+    ##float: left;
+    ##width: 320px;
+    ##padding: 0px 15px 15px 15px;
+    ## background-color: blue;
+    ## min-height: 100%;
+    ##float: right;
+    ##margin: 15px 75px 15px 315px;
+    ##float: left;
+    ##clear: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    text-align: justify; 
+    clear: none;
+    
+    
+    
+    }
+    
+    #text {
+    ## color: red;
+    clear: none;
+    font-size: 20px;
+    font-family:"Times New Roman",Georgia,Serif;
+    
+    }
+    
+    
+    #page-content-box-image {
+    float: left;
+    align: top;
+    ##align: right;
+    ##clear: both;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    ##display: inline;
+    
+    clear: none;
+    
+    }

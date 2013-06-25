@@ -1,0 +1,38 @@
+
+// following two methods from http://answers.oreilly.com/topic/1823-adding-a-page-overlay-in-javascript/
+
+$(document).ready(function() {
+  
+  $('#show_button').click(function() {    
+    
+    // create overlay and append to page
+    var overlay = document.createElement("div");
+    overlay.setAttribute("id","overlay_box");
+    overlay.setAttribute("class", "overlay_box");
+    document.getElementById("page-content-box").appendChild(overlay);
+//     document.body.appendChild(overlay);
+    
+    var text = document.createElement("div");
+    text.setAttribute("id","overlay_text");
+    text.setAttribute("class", "overlay_text");
+//     document.body.appendChild(text);
+    overlay.appendChild(text);
+    
+    // make text a child of overlay
+//     document.getElementById("overlay_box").appendChild("overlay_text");
+    
+    // file in the text div
+    text.innerHTML = "hello there";
+    
+    // click to restore page
+    overlay.onclick=restore;
+    
+  });
+  
+  // restore page to normal
+  function restore() {
+    document.getElementById("page-content-box").removeChild(document.getElementById("overlay_box"));
+//     document.getElementById("page-content-box").removeChild(document.getElementById("overlay_text"));
+  }
+  
+});
