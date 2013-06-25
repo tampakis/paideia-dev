@@ -132,6 +132,10 @@ font-family: "Lato", sans-serif;
      
      }
      
+     .page-content-box > h1 {
+       font-size: 36px;	
+     }
+     
      #pi-logo-left {
      width:109px;
      height:113px;

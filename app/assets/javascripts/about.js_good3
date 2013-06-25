@@ -1,0 +1,66 @@
+
+// following two methods from http://answers.oreilly.com/topic/1823-adding-a-page-overlay-in-javascript/
+
+$(document).ready(function() {
+  
+  var expanded = 0;
+  
+//   //   if we push the box itself
+//   $('#overlay_box').click(function(){
+//     if (expanded==0) {
+//       $(this).animate({'z-index': '5'});
+//       $(this).animate({'height': '400px'},600);
+//       expanded = 1;
+//     }
+//     else if (expanded==1) {
+//       $(this).animate({'height': '100px'},600);
+//       $(this).animate({'z-index': '0'});
+//       expanded = 0;
+//     }
+//     
+//   });
+    
+  //   if we push the box itself
+//   $('div#overlay_box').click(function(){
+//     if (expanded==0) {
+//       $(this).animate({'z-index': '5'});
+//       $(this).animate({'height': '400px'},600);
+//       expanded = 1;
+//     }
+//     else if (expanded==1) {
+//       $(this).animate({'height': '100px'},600);
+//       $(this).animate({'z-index': '0'});
+//       expanded = 0;
+//     }
+//     
+//   });
+//   
+  //   now if we push the button...
+//   $('div#show_button').click(function(){
+  $('#show_button').click(function() {
+    
+    
+//       $(this).value = "Hello there";
+// 	 $(this).innerHTML = "Hello there";
+
+    
+//     overlay = getParentById('page-content-box').getChildById('overlay_box');
+//        overlay = $(this).siblings('#overlay_box');
+//     
+    if (expanded==0) {
+      $('#overlay_box').animate({'z-index': '5'});
+      $('#overlay_box').animate({'height': '400px'},600);
+      expanded = 1;
+    }
+    else if (expanded==1) {
+      $('#overlay_box').animate({'height': '100px'},600);
+      $('#overlay_box').animate({'z-index': '0'});
+      expanded = 0;
+    }
+    
+    
+    
+    
+  });
+  
+});

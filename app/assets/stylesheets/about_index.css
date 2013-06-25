@@ -23,7 +23,7 @@ top: 50px;
 
 /* following style from http://answers.oreilly.com/topic/1823-adding-a-page-overlay-in-javascript/ */
 
-#overlay_box
+.overlay_box
 {
   background-color: #A19D9F; #grey
   opacity: 1;
